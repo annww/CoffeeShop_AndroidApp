@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "126768626796",
+    "project_id": "blueymovies219",
+    "storage_bucket": "blueymovies219.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126768626796:android:24b7798c78fd5787d6ac49",
+        "android_client_info": {
+          "package_name": "ntu.duongthianhhong.blueymovies"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqvTXbbU2z_jhaYxEo5JeJwuUyjEmA3ek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126768626796:android:9dcc476347d66a88d6ac49",
+        "android_client_info": {
+          "package_name": "vn.duongthianhhong.blueymovies"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqvTXbbU2z_jhaYxEo5JeJwuUyjEmA3ek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
