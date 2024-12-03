@@ -1,4 +1,4 @@
-package ntu.duongthianhhong.blueymovies;
+package ntu.duongthianhhong.blueymovies.Activities;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -29,6 +29,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+
+import ntu.duongthianhhong.blueymovies.R;
 
 public class LoginActivity extends AppCompatActivity {
 
