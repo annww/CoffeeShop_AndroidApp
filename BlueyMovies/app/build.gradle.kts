@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "vn.duongthianhhong.blueymovies"
+    namespace = "ntu.duongthianhhong.blueymovies"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "vn.duongthianhhong.blueymovies"
+        applicationId = "ntu.duongthianhhong.blueymovies"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -33,12 +33,14 @@ android {
 }
 
 dependencies {
-
+    implementation(libs.jbcrypt)
+    implementation(libs.glide)
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation(libs.firebase.auth)
+    implementation(libs.firebase.database)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

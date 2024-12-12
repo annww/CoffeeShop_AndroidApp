@@ -3,227 +3,266 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@drawable/linearcolor"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SignUpActivity">
-    <androidx.constraintlayout.widget.ConstraintLayout
+
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingHorizontal="20dp"
-        android:paddingBottom="100dp"
-        android:paddingTop="70dp"
-        android:background="@color/white">
-        <!--    Tiêu đề-->
-        <TextView
-            android:id="@+id/titleSignUp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/TitleStyle"
-            android:text="Welcome to Bluey"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-        <!--    Lời chào-->
-        <TextView
-            android:id="@+id/introSignUp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/ContentStyle"
-            android:text="If you don't have account, register in here"
-            app:layout_constraintTop_toBottomOf="@+id/titleSignUp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_marginTop="10dp"
-            />
-        <!--    Nhập tên tài khoản    -->
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/inputUserLayoutSignUp"
+        android:layout_margin="16dp"
+        android:weightSum="1"
+        android:gravity="center_vertical">
+
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/introSignUp"
-            android:layout_marginTop="20dp"
-            app:hintAnimationEnabled="false"
-            app:hintEnabled="false"
-            android:background="@drawable/input_border"
-            android:paddingHorizontal="20dp"
-            >
+            android:padding="8dp">
+
             <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center">
 
-                <ImageView
+                <!-- Title Section -->
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/user" />
+                    android:text="Xem phim cùng \nBluey Movies"
+                    android:textColor="@color/primaryblue"
+                    android:fontFamily="@font/sora_extrabold"
+                    android:textSize="36sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="12dp" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/inputUserSignUp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    style="@style/InputStyle"
-                    android:textColorHint="@color/black"
-                    android:hint="Tên tài khoản"
-                    />
-            </LinearLayout>
-        </com.google.android.material.textfield.TextInputLayout>
-        <!--    Cảnh báo cú pháp tên tài khoản    -->
-        <TextView
-            android:id="@+id/ivalidUser"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/inputUserLayoutSignUp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_marginTop="5dp"
-            android:textColor="@color/error"
-            android:textSize="14dp" />
-        <!--    Nhập email    -->
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/inputEmailLayoutSignUp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/ivalidUser"
-            android:layout_marginTop="5dp"
-            app:hintAnimationEnabled="false"
-            app:hintEnabled="false"
-            android:background="@drawable/input_border"
-            android:paddingHorizontal="20dp"
-            >
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center">
-
-                <ImageView
-                    android:id="@+id/iconEmailSignUp"
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/envelope" />
+                    android:text="Đăng ký tài khoản mới"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/sora_medium"
+                    android:layout_marginBottom="2dp" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/inputEmailSignUp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    style="@style/InputStyle"
-                    android:textColorHint="@color/content_color"
-                    android:hint="Email"
-                    />
-            </LinearLayout>
-        </com.google.android.material.textfield.TextInputLayout>
-        <!--    Cảnh báo cú pháp email    -->
-        <TextView
-            android:id="@+id/ivalidMail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/inputEmailLayoutSignUp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_marginTop="5dp"
-            android:textColor="@color/error"
-            android:textSize="14dp" />
-        <!--    Nhập mật khẩu    -->
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/inputPassLayoutSignUp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/ivalidMail"
-            android:layout_marginTop="5dp"
-            app:hintAnimationEnabled="false"
-            app:hintEnabled="false"
-            android:background="@drawable/input_border"
-            android:paddingHorizontal="20dp"
-
-            >
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center">
-
-                <ImageView
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/padlock" />
+                    android:text="Cùng thưởng thức những thước phim hay!"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/sora_medium"
+                    android:layout_marginBottom="24dp" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/inputPassSignUp"
+                <!-- Input Section -->
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    style="@style/InputStyle"
-                    android:textColorHint="@color/content_color"
-                    android:hint="Mật khẩu"
-                    />
+                    android:orientation="vertical"
+                    android:layout_marginBottom="24dp">
+
+                    <!-- Username Input -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintAnimationEnabled="false"
+                        app:hintEnabled="false"
+                        android:background="@drawable/inputborder"
+                        android:paddingHorizontal="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/user"
+                                android:layout_marginEnd="8dp" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/inputNameSignUp"
+                                style="@style/InputStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Tên tài khoản"
+                                android:inputType="textPersonName"
+                                android:textColorHint="@color/contentcolor" />
+                        </LinearLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <TextView
+                        android:id="@+id/needName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/error"
+                        android:textSize="14sp" />
+
+                    <!-- Email Input -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintAnimationEnabled="false"
+                        app:hintEnabled="false"
+                        android:background="@drawable/inputborder"
+                        android:paddingHorizontal="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/email"
+                                android:layout_marginEnd="8dp" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/inputEmailSignUp"
+                                style="@style/InputStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Email"
+                                android:inputType="textEmailAddress"
+                                android:textColorHint="@color/contentcolor" />
+                        </LinearLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <TextView
+                        android:id="@+id/needMail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/error"
+                        android:textSize="14sp" />
+
+                    <!-- Password Input -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintAnimationEnabled="false"
+                        app:hintEnabled="false"
+                        android:background="@drawable/inputborder"
+                        android:paddingHorizontal="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/lock"
+                                android:layout_marginEnd="8dp" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/inputPasswordSignUp"
+                                style="@style/InputStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Mật khẩu"
+                                android:inputType="textPassword"
+                                android:textColorHint="@color/contentcolor" />
+                        </LinearLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <TextView
+                        android:id="@+id/needPass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/error"
+                        android:textSize="14sp" />
+
+                    <!-- Password Input (Confirm) -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputPassAgain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintAnimationEnabled="false"
+                        app:hintEnabled="false"
+                        android:background="@drawable/inputborder"
+                        android:paddingHorizontal="20dp"
+                        android:layout_marginTop="12dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/lock"
+                                android:layout_marginEnd="8dp" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/inputPassSignUnAgain"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/InputStyle"
+                                android:textColorHint="@color/contentcolor"
+                                android:hint="Nhập lại mật khẩu"
+                                android:inputType="textPassword" />
+                        </LinearLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/needPassAgain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/error"
+                        android:textSize="14sp" />
+                </LinearLayout>
             </LinearLayout>
-        </com.google.android.material.textfield.TextInputLayout>
-        <!--    Cảnh báo cú pháp mật khẩu    -->
-        <TextView
-            android:id="@+id/ivalidPass"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/inputPassLayoutSignUp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_marginTop="5dp"
-            android:textColor="@color/error"
-            android:textSize="14dp"/>
-        <!--    Nhập lại mật khẩu    -->
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/inputConfirmPassLayoutSignUp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/ivalidPass"
-            android:layout_marginTop="5dp"
-            app:hintAnimationEnabled="false"
-            app:hintEnabled="false"
-            android:background="@drawable/input_border"
-            android:paddingHorizontal="20dp"
+        </ScrollView>
 
-            >
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/padlock" />
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/inputConfirmPassSignUp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    style="@style/InputStyle"
-                    android:textColorHint="@color/content_color"
-                    android:hint="Nhập lại mật khẩu"
-                    />
-            </LinearLayout>
-        </com.google.android.material.textfield.TextInputLayout>
-        <!--    Nút đăng ký    -->
+        <!-- Sign Up Button -->
         <Button
-            android:id="@+id/btnSignUp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/inputConfirmPassLayoutSignUp"
-            android:layout_marginTop="30dp"
+            android:id="@+id/btnDangKy"
             style="@style/ButtonSign"
-            app:backgroundTint="@null"
-            android:text="Đăng ký"
-            />
-        <!--    Chuyển qua view Đăng nhập    -->
-        <LinearLayout
-            android:id="@+id/changeSignIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:gravity="center">
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Đăng ký"
+            app:backgroundTint="@null"/>
+
+        <!-- Redirect to Login -->
+        <LinearLayout
+            android:id="@+id/txtRedirect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Đã có tài khoản? "
-                style="@style/ContentStyle"/>
+                android:fontFamily="@font/sora_medium"
+                android:text="Đã có tài khoản?"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
             <TextView
-                android:id="@+id/textClickSignIn"
+                android:id="@+id/txtDangNhap"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/ContentStyle"
-                android:textColor="#333647"
-                android:text="Đăng nhập"/>
+                android:layout_marginStart="4dp"
+                android:fontFamily="@font/sora_medium"
+                android:text="Đăng nhập"
+                android:textColor="@color/primaryblue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
         </LinearLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
