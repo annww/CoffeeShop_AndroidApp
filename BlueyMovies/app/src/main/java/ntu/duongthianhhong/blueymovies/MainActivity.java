@@ -1,33 +1,54 @@
 package ntu.duongthianhhong.blueymovies;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.firebase.auth.FirebaseAuth;
+import android.view.Window;
+import android.view.WindowManager;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
+import ntu.duongthianhhong.blueymovies.databinding.ActivityMainBinding;
+
 
 public class MainActivity extends AppCompatActivity {
-
-    private Button btnLogOut;
+    ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
-        btnLogOut = findViewById(R.id.btnLogOut);
-
-        // Thiết lập sự kiện khi nhấn nút đăng xuất
-        btnLogOut.setOnClickListener(view -> {
-            FirebaseAuth.getInstance().signOut(); // Đăng xuất người dùng
-
-            // Quay lại LoginActivity sau khi đăng xuất
-            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);  // Xoá tất cả các Activity trước đó
-            startActivity(intent);
-            finish();  // Đóng MainActivity để người dùng không thể quay lại bằng nút back
+        replaceFragment(new ExplorerFragment());
+        binding.bottomNav.setOnItemSelectedListener(item -> {
+            if(item.getItemId() == R.id.favorites) {
+                replaceFragment(new FavoriteFragment());
+            }
+            if(item.getItemId() == R.id.explorer) {
+                replaceFragment(new ExplorerFragment());
+            }
+            if(item.getItemId() == R.id.cart) {
+                replaceFragment(new CartFragment());
+            }
+            if(item.getItemId() == R.id.profile) {
+                replaceFragment(new ProfileFragment());
+            }
+            return true;
         });
+
+        // giúp layout của cửa sổ vượt ra ngoài giới hạn thông thường của màn hình.
+        Window w = getWindow();
+        w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+    }
+
+    private void replaceFragment(Fragment fragment) {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.framelayout, fragment);
+        fragmentTransaction.commit();
     }
 }
