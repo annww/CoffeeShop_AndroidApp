@@ -13,6 +13,7 @@ firebaseAuth = "23.1.0"
 firebaseDatabase = "21.0.0"
 jbcrypt = '0.4'
 
+
 [libraries]
 glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -25,7 +26,6 @@ constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayo
 firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
 firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
 jbcrypt = { group = "org.mindrot", name = "jbcrypt", version.ref = "jbcrypt" }
-
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
