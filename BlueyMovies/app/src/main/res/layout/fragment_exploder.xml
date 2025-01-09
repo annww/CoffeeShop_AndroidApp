@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ExplorerFragment">
+    tools:context=".ExplorerFragment"
+    android:background="#BBD8EC">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#BBD8EC">
+        android:layout_marginTop="55dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -18,24 +19,27 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
 
+                <!-- Logo -->
                 <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="30dp"
+                    android:id="@+id/logoImageView"
+                    android:layout_width="70dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/profile"
-                    app:layout_constraintEnd_toEndOf="parent"
+                    android:contentDescription="Logo"
+                    android:src="@drawable/blueylogo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
+                <!-- Search Bar -->
                 <EditText
                     android:id="@+id/editTextText3"
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
                     android:background="@drawable/search_input_background"
                     android:drawableStart="@drawable/icon_search"
                     android:drawablePadding="12dp"
@@ -46,22 +50,30 @@
                     android:textColor="#000"
                     android:textColorHint="#888"
                     android:textSize="16sp"
-                    app:layout_constraintEnd_toStartOf="@id/imageView2"
-                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/cardView"
+                    app:layout_constraintStart_toEndOf="@id/logoImageView"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <!--                <TextView-->
-<!--                    android:id="@+id/textView"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginRight="10dp"-->
-<!--                    android:fontFamily="@font/sora_bold"-->
-<!--                    android:text="Hello Hồng Dương"-->
-<!--                    android:textSize="16sp"-->
-<!--                    android:textColor="@android:color/black"-->
-<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                    app:layout_constraintEnd_toStartOf="@id/imageView2"-->
-<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+                <!-- Profile Image -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="8dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/an" />
+                </androidx.cardview.widget.CardView>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
