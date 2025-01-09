@@ -1,4 +1,4 @@
-package ntu.duongthianhhong.blueymovies;
+package ntu.duongthianhhong.blueymovies.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,6 +19,8 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import org.mindrot.jbcrypt.BCrypt;
+
+import ntu.duongthianhhong.blueymovies.R;
 
 public class LoginActivity extends AppCompatActivity {
 

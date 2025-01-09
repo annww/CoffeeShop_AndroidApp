@@ -1,4 +1,4 @@
-package ntu.duongthianhhong.blueymovies;
+package ntu.duongthianhhong.blueymovies.Activities;
 public class Account {
     private String name;
     private String email;
