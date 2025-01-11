@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
 
+import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.CenterCrop;
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.bumptech.glide.request.RequestOptions;
@@ -50,7 +51,10 @@ public class SlidersAdapter extends RecyclerView.Adapter<SlidersAdapter.SliderVi
 
     @Override
     public void onBindViewHolder(@NonNull SlidersAdapter.SliderViewholder holder, int position) {
-
+    holder.setImage(sliderItems.get(position));
+    if(position == sliderItems.size()-2){
+        viewPager2.post(runnable);
+    }
     }
 
     @Override
@@ -75,8 +79,15 @@ public class SlidersAdapter extends RecyclerView.Adapter<SlidersAdapter.SliderVi
         void setImage(SliderItems sliderItems){
             RequestOptions requestOptions = new RequestOptions();
             requestOptions = requestOptions.transform(new CenterCrop(), new RoundedCorners(60));
-
-            
+            Glide.with(context)
+                    .load(sliderItems.getImage())
+                    .apply(requestOptions)
+                    .into(imageView);
+            nameTxt.setText(sliderItems.getName());
+            genreTxt.setText(sliderItems.getGenre());
+            ageTxt.setText(sliderItems.getAge());
+            yearTxt.setText(sliderItems.getYear());
+            timeTxt.setText(sliderItems.getTime());
         }
     }
 }

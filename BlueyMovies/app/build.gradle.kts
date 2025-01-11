@@ -54,5 +54,11 @@ dependencies {
     implementation ("com.cloudinary:cloudinary-android:2.3.1")
     implementation ("com.cloudinary:cloudinary-android-download:2.3.1")
     implementation ("com.cloudinary:cloudinary-android-preprocess:2.3.1")
+    // Sử dụng BOM Firebase để quản lý các phụ thuộc Firebase
+    implementation("com.google.firebase:firebase-database")
+    implementation(platform("com.google.firebase:firebase-bom:32.8.0"))
+    implementation("com.google.firebase:firebase-auth")
+    implementation("com.google.firebase:firebase-firestore")
+    implementation("com.google.firebase:firebase-storage:20.3.0")
 }
 

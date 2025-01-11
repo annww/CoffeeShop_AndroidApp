@@ -1,66 +1,99 @@
 package ntu.duongthianhhong.blueymovies.Activities;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager2.widget.CompositePageTransformer;
+import androidx.viewpager2.widget.MarginPageTransformer;
+import androidx.viewpager2.widget.ViewPager2;
+
+import com.bumptech.glide.Glide;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.ArrayList;
+
+import ntu.duongthianhhong.blueymovies.Adapters.SlidersAdapter;
+import ntu.duongthianhhong.blueymovies.Domains.SliderItems;
 import ntu.duongthianhhong.blueymovies.R;
+import ntu.duongthianhhong.blueymovies.databinding.FragmentExploderBinding;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link ExplorerFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class ExplorerFragment extends Fragment {
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public ExplorerFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment ExploderFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static ExplorerFragment newInstance(String param1, String param2) {
-        ExplorerFragment fragment = new ExplorerFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+    FragmentExploderBinding binding;
+    private FirebaseDatabase database;
+    private Handler sliderHandles = new Handler();
+    private Runnable sliderRunnable = new Runnable() {
+        @Override
+        public void run() {
+            binding.viewPager2.setCurrentItem(binding.viewPager2.getCurrentItem()+1);
         }
+    };
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        binding = FragmentExploderBinding.inflate(inflater, container, false);
+        firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+        database = FirebaseDatabase.getInstance();
+
+        return binding.getRoot();
+    }
+
+    private void banners(ArrayList<SliderItems> items){
+        binding.viewPager2.setAdapter(new SlidersAdapter(items, binding.viewPager2));
+        binding.viewPager2.setClipToPadding(false);
+        binding.viewPager2.setClipChildren(false);
+        binding.viewPager2.setOffscreenPageLimit(3);
+        binding.viewPager2.getChildAt(0).setOverScrollMode(RecyclerView.OVER_SCROLL_NEVER);
+
+        CompositePageTransformer compositePageTransformer = new CompositePageTransformer();
+        compositePageTransformer.addTransformer(new MarginPageTransformer(40));
+        compositePageTransformer.addTransformer(new ViewPager2.PageTransformer() {
+            @Override
+            public void transformPage(@NonNull View page, float position) {
+                float r = 1-Math.abs(position);
+                page.setScaleY(0.85f + 0.15f);
+            }
+        });
+
+        binding.viewPager2.setPageTransformer(compositePageTransformer);
+        binding.viewPager2.setCurrentItem(1);
+        binding.viewPager2.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageSelected(int position) {
+                super.onPageSelected(position);
+                sliderHandles.removeCallbacks(sliderHandles);
+            }
+        });
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_exploder, container, false);
+    public void onPause() {
+        super.onPause();
+        sliderHandler.removeCallbacks(sliderRunnable);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        sliderHandler.postDelayed(sliderRunnable, 2000);
     }
 }
