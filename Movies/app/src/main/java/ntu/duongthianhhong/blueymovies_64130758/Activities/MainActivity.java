@@ -1,4 +1,4 @@
-package ntu.duongthianhhong.blueymovies_64130758;
+package ntu.duongthianhhong.blueymovies_64130758.Activities;
 
 import android.os.Bundle;
 
@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import ntu.duongthianhhong.blueymovies_64130758.R;
 
 public class MainActivity extends AppCompatActivity {
 

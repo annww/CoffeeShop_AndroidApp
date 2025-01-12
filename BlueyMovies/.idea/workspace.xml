@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+    <layouts>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_detail.xml">
+        <config>
+          <theme>@style/Theme.Blueymovies</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_intro.xml">
+        <config>
+          <theme>@style/Theme.Blueymovies</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+        <config>
+          <theme>@style/Theme.Blueymovies</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+        <config>
+          <theme>@style/Theme.Blueymovies</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_reset_pass.xml">
+        <config>
+          <theme>@style/Theme.Blueymovies</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up.xml">
+        <config>
+          <theme>@style/Theme.Blueymovies</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/bottom_sheet.xml">
+        <config>
+          <theme>@style/Theme.Blueymovies</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/film_viewholder.xml">
+        <config>
+          <theme>@style/Theme.Blueymovies</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_cart.xml">
+        <config>
+          <theme>@style/Theme.Blueymovies</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_explorer.xml">
+        <config>
+          <theme>@style/Theme.Blueymovies</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_favorite.xml">
+        <config>
+          <theme>@style/Theme.Blueymovies</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml">
+        <config>
+          <theme>@style/Theme.Blueymovies</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/slider_viewholder.xml">
+        <config>
+          <theme>@style/Theme.Blueymovies</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/viewholder_actor.xml">
+        <config>
+          <theme>@style/Theme.Blueymovies</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/viewholder_category.xml">
+        <config>
+          <theme>@style/Theme.Blueymovies</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/menu/bottom_menu.xml">
+        <config>
+          <theme>@style/Theme.Blueymovies</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/xml/paths.xml">
+        <config>
+          <theme>@style/Theme.Blueymovies</theme>
+        </config>
+      </layout>
+    </layouts>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fd76e8a8-b45b-4a56-b3f1-b23ec5f2574a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Movies/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/java/ntu/duongthianhhong/blueymovies_64130758/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-hdpi/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-hdpi/bookmark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-hdpi/btn_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-hdpi/btn_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-hdpi/btn_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-hdpi/btn_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-hdpi/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-hdpi/intro_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-hdpi/microphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-hdpi/play_circle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-hdpi/profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-hdpi/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-hdpi/share.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-ldpi/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-ldpi/bookmark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-ldpi/btn_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-ldpi/btn_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-ldpi/btn_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-ldpi/btn_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-ldpi/intro_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-ldpi/microphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-ldpi/play_circle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-ldpi/profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-ldpi/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-ldpi/share.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-mdpi/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-mdpi/bookmark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-mdpi/btn_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-mdpi/btn_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-mdpi/btn_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-mdpi/btn_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-mdpi/intro_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-mdpi/microphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-mdpi/play_circle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-mdpi/profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-mdpi/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-mdpi/share.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xhdpi/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xhdpi/bookmark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xhdpi/btn_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xhdpi/btn_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xhdpi/btn_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xhdpi/btn_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xhdpi/intro_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xhdpi/microphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xhdpi/play_circle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xhdpi/profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xhdpi/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xhdpi/share.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxhdpi/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxhdpi/bookmark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxhdpi/btn_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxhdpi/btn_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxhdpi/btn_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxhdpi/btn_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxhdpi/intro_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxhdpi/microphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxhdpi/play_circle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxhdpi/profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxhdpi/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxhdpi/share.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxxhdpi/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxxhdpi/bookmark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxxhdpi/btn_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxxhdpi/btn_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxxhdpi/btn_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxxhdpi/btn_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxxhdpi/intro_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxxhdpi/microphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxxhdpi/play_circle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxxhdpi/profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxxhdpi/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxxhdpi/share.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\samh5\.android\avd\Pixel_8_Pro_API_35.avd)]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="blueymovies" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="blueymovies" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="blueymovies" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="blueymovies" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="valueResourceFile" />
+        <option value="layoutResourceFile" />
+        <option value="Class" />
+        <option value="resourceFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2pumMsp0fnhSg0AjVqmmdjdg1sB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BlueyMovies [signingReport].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/MoviesApp/Movies&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Dependencies&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MoviesApp\BlueyMovies\app\src\main\java\ntu\duongthianhhong\blueymovies" />
+      <recent name="D:\MoviesApp\BlueyMovies\app\src\main\java\ntu\duongthianhhong\blueymovies\Activities" />
+      <recent name="D:\MoviesApp\BlueyMovies\app\src\main\java\ntu\duongthianhhong\blueymovies\Adapters" />
+      <recent name="D:\MoviesApp\BlueyMovies\app\src\main\java\ntu\duongthianhhong\blueymovies\Domains" />
+      <recent name="D:\MoviesApp\BlueyMovies\app\src\main\res\layout" />
+    </key>
+    <key name="android.template.308557149">
+      <recent name="ntu.duongthianhhong.blueymovies" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MoviesApp\BlueyMovies\app\src\main\res\drawable" />
+    </key>
+    <key name="android.template.-567102222">
+      <recent name="ntu.duongthianhhong.blueymovies" />
+    </key>
+    <key name="android.template.-546124091">
+      <recent name="ntu.duongthianhhong.blueymovies" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ntu.duongthianhhong.blueymovies.Activities" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle signingReport" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Android App.app">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="blueymovies.app.main" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlueyMovies [signingReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="signingReport" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Android App.app" />
+      <item itemvalue="Gradle.BlueyMovies [signingReport]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.BlueyMovies [signingReport]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fd76e8a8-b45b-4a56-b3f1-b23ec5f2574a" name="Changes" comment="" />
+      <created>1733624289754</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733624289754</updated>
+    </task>
+    <servers />
+  </component>
+</project>
