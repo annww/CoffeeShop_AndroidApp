@@ -14,6 +14,9 @@
 ![image](https://github.com/user-attachments/assets/cd8db6c4-8031-44ae-ab48-d32f0ac664da)
 
 ## Chức năng xem phim
+Call API từ Firebase
+![image](https://github.com/user-attachments/assets/b5e8481c-bbb0-4416-9646-1f54e27495bc)
+
 
 ![image](https://github.com/user-attachments/assets/ad1a0381-0b08-48ac-a52b-5ef87a2945de)
 
