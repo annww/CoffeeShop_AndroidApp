@@ -30,7 +30,7 @@
             android:exported="false" />
         <activity
             android:name=".Activities.MainActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".Activities.SignInActivity"
             android:exported="true">

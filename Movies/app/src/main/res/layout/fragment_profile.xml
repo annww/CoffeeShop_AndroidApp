@@ -5,143 +5,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activities.ProfileFragment"
-    android:id="@+id/infoFragment">
+    android:id="@+id/infoFragment"
+    android:padding="16dp">
 
+    <!-- Logout Button -->
     <ImageView
         android:id="@+id/logout"
         android:layout_width="60dp"
-        android:layout_height="55dp"
+        android:layout_height="60dp"
         android:background="@drawable/logout"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintVertical_bias="0.1" />
 
+    <!-- Avatar Image -->
     <ImageView
         android:id="@+id/imgAvatar"
-        android:layout_width="281dp"
-        android:layout_height="148dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/logout"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintVertical_bias="0.22"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintBottom_toTopOf="@+id/edtFirstname"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <EditText
-        android:id="@+id/edtFirstname"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:background="@drawable/edit_text"
-        android:ems="10"
-        android:inputType="text"
-        android:paddingLeft="10dp"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintVertical_bias="0.42"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:focusable="false"
-        android:focusableInTouchMode="false"/>
-
-    <EditText
-        android:id="@+id/edtLastname"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:background="@drawable/edit_text"
-        android:ems="10"
-        android:inputType="text"
-        android:paddingLeft="10dp"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintVertical_bias="0.52"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/edtAddress"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:background="@drawable/edit_text"
-        android:ems="10"
-        android:inputType="text"
-        android:paddingLeft="10dp"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintVertical_bias="0.62"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/edtSDT"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:background="@drawable/edit_text"
-        android:ems="10"
-        android:inputType="text"
-        android:paddingLeft="10dp"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintVertical_bias="0.72"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/edtBirthDay"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:background="@drawable/edit_text"
-        android:ems="10"
-        android:inputType="text"
-        android:paddingLeft="10dp"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintVertical_bias="0.82"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnEdit"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="30dp"
-        android:backgroundTint="@color/red"
-        android:text="Chỉnh sửa"
-        app:layout_constraintHorizontal_bias="0.15"
-        app:layout_constraintVertical_bias="0.92"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnSave"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:backgroundTint="@color/red"
-        android:text="Lưu"
-        app:layout_constraintHorizontal_bias="0.85"
-        app:layout_constraintVertical_bias="0.92"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+    <!-- First Name Text -->
     <TextView
         android:id="@+id/txtFirstName"
         android:layout_width="wrap_content"
@@ -150,13 +41,26 @@
         android:textColor="#FFF"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.42" />
+        app:layout_constraintTop_toBottomOf="@+id/imgAvatar"
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <!-- First Name EditText -->
+    <EditText
+        android:id="@+id/edtFirstname"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text"
+        android:paddingLeft="16dp"
+        android:textSize="14sp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:layout_constraintTop_toBottomOf="@+id/txtFirstName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.9"/>
+
+    <!-- Last Name Text -->
     <TextView
         android:id="@+id/txtLastName"
         android:layout_width="wrap_content"
@@ -165,13 +69,26 @@
         android:textColor="#FFF"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.52" />
+        app:layout_constraintTop_toBottomOf="@+id/edtFirstname"
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <!-- Last Name EditText -->
+    <EditText
+        android:id="@+id/edtLastname"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text"
+        android:paddingLeft="16dp"
+        android:textSize="14sp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:layout_constraintTop_toBottomOf="@+id/txtLastName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.9"/>
+
+    <!-- Address Text -->
     <TextView
         android:id="@+id/txtAddress"
         android:layout_width="wrap_content"
@@ -180,13 +97,26 @@
         android:textColor="#FFF"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.62" />
+        app:layout_constraintTop_toBottomOf="@+id/edtLastname"
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <!-- Address EditText -->
+    <EditText
+        android:id="@+id/edtAddress"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text"
+        android:paddingLeft="16dp"
+        android:textSize="14sp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.9"/>
+
+    <!-- Phone Number Text -->
     <TextView
         android:id="@+id/txtSDT"
         android:layout_width="wrap_content"
@@ -195,13 +125,26 @@
         android:textColor="#FFF"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.72" />
+        app:layout_constraintTop_toBottomOf="@+id/edtAddress"
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <!-- Phone Number EditText -->
+    <EditText
+        android:id="@+id/edtSDT"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text"
+        android:paddingLeft="16dp"
+        android:textSize="14sp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:layout_constraintTop_toBottomOf="@+id/txtSDT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.9"/>
+
+    <!-- Birthday Text -->
     <TextView
         android:id="@+id/txtBirthday"
         android:layout_width="wrap_content"
@@ -210,12 +153,47 @@
         android:textColor="#FFF"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.82" />
+        app:layout_constraintTop_toBottomOf="@+id/edtSDT"
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <!-- Birthday EditText -->
+    <EditText
+        android:id="@+id/edtBirthDay"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text"
+        android:paddingLeft="16dp"
+        android:textSize="14sp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:layout_constraintTop_toBottomOf="@+id/txtBirthday"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.9"/>
+
+    <!-- Edit Button -->
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/red"
+        android:text="Chỉnh sửa"
+        app:layout_constraintTop_toBottomOf="@+id/edtBirthDay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSave"
+        app:layout_constraintWidth_percent="0.4"/>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/red"
+        android:text="Lưu"
+        app:layout_constraintTop_toBottomOf="@+id/edtBirthDay"
+        app:layout_constraintStart_toEndOf="@+id/btnEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.4"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -45,11 +45,11 @@ public class SignInActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         });
-//        btnResetPass.setOnClickListener(v -> {
-//            Intent intent = new Intent(SignInActivity.this, ResetPassActivity.class);
-//            startActivity(intent);
-//            finish();
-//        });
+        btnResetPass.setOnClickListener(v -> {
+            Intent intent = new Intent(SignInActivity.this, ResetPasswordActivity.class);
+            startActivity(intent);
+            finish();
+        });
     }
 
     private void showErrorDialog() {

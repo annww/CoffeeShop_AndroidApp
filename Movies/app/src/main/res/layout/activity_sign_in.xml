@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activities.SignInActivity"
-    android:background="@drawable/backgroundapp2">
+    android:background="@color/lightblue">
 
     <EditText
         android:id="@+id/edtUsername"
@@ -43,7 +43,7 @@
         android:id="@+id/btnLogin"
         android:layout_width="328dp"
         android:layout_height="60dp"
-        android:backgroundTint="#C750A5"
+        android:background="@drawable/lightblue_bg"
         android:text="Đăng nhập"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -57,7 +57,7 @@
         android:id="@+id/btnSignUp"
         android:layout_width="246dp"
         android:layout_height="60dp"
-        android:backgroundTint="#E13E6B"
+        android:backgroundTint="#E9A0DC"
         android:text="Đăng ký"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -69,9 +69,9 @@
 
     <ImageView
         android:id="@+id/img"
-        android:layout_width="290dp"
-        android:layout_height="245dp"
-        android:background="@drawable/baseline_account_circle_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blueylogo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -83,18 +83,18 @@
         android:id="@+id/btnResetPass"
         android:layout_width="230dp"
         android:layout_height="50dp"
+        android:background="@android:color/transparent"
         android:backgroundTint="@android:color/transparent"
         android:text="Quên mật khẩu"
-        android:background="@android:color/transparent"
         android:textColor="@color/white"
         android:textSize="17sp"
         android:textStyle="italic|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.65" />
+        app:layout_constraintVertical_bias="0.646" />
 
     <TextView
         android:id="@+id/txtNeedAccount"

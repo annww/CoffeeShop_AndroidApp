@@ -21,6 +21,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.CompositePageTransformer;
@@ -187,6 +188,14 @@ public class ExplorerFragment extends Fragment {
 
                             txtUsername.setText(username);
                             txtEmail.setText(email);
+
+                            imgAvatar.setOnClickListener(v -> {
+                                // Khi ấn vào avatar, chuyển tới ProfileFragment
+                                FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+                                transaction.replace(R.id.frame_layout, new ProfileFragment());
+                                transaction.addToBackStack(null); // Thêm vào back stack để có thể quay lại
+                                transaction.commit();
+                            });
                         }
                     }
                 }
