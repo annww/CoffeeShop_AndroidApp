@@ -97,8 +97,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd76e8a8-b45b-4a56-b3f1-b23ec5f2574a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Movies/app/src/main/java/ntu/duongthianhhong/blueymovies_64130758/FirebaseDBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Movies/app/src/main/java/ntu/duongthianhhong/blueymovies_64130758/FirebaseStorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Movies/app/src/main/res/layout/bottom_sheet.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/java/ntu/duongthianhhong/blueymovies_64130758/Activities/IntroActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies/app/src/main/java/ntu/duongthianhhong/blueymovies_64130758/Activities/IntroActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/java/ntu/duongthianhhong/blueymovies_64130758/Activities/ProfileFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies/app/src/main/java/ntu/duongthianhhong/blueymovies_64130758/Activities/ProfileFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/layout/fragment_favorite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies/app/src/main/res/layout/fragment_favorite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/layout/fragment_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies/app/src/main/res/layout/fragment_profile.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
