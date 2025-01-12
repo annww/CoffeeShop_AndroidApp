@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "743695978106",
+    "project_id": "moviesapp64130758",
+    "storage_bucket": "moviesapp64130758.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743695978106:android:602009ab8852a7d14275c3",
+        "android_client_info": {
+          "package_name": "ntu.duongthianhhong.blueymovies"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgqP03TqPSjHmClobmuT5GzFBQKL4ft7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
