@@ -97,23 +97,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd76e8a8-b45b-4a56-b3f1-b23ec5f2574a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Movies/app/src/main/java/ntu/duongthianhhong/blueymovies_64130758/Activities/DetailActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Movies/app/src/main/java/ntu/duongthianhhong/blueymovies_64130758/Activities/SignInActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Movies/app/src/main/java/ntu/duongthianhhong/blueymovies_64130758/Activities/SignUpActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Movies/app/src/main/java/ntu/duongthianhhong/blueymovies_64130758/Adapters/CastListAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Movies/app/src/main/java/ntu/duongthianhhong/blueymovies_64130758/Adapters/CategoryEachFilmAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Movies/app/src/main/java/ntu/duongthianhhong/blueymovies_64130758/Domains/UserModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Movies/app/src/main/res/layout/activity_detail.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Movies/app/src/main/res/layout/activity_sign_in.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Movies/app/src/main/res/layout/activity_sign_up.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Movies/app/src/main/res/layout/viewholder_actor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Movies/app/src/main/res/layout/viewholder_category.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/java/ntu/duongthianhhong/blueymovies_64130758/Activities/ExplorerFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies/app/src/main/java/ntu/duongthianhhong/blueymovies_64130758/Activities/ExplorerFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/java/ntu/duongthianhhong/blueymovies_64130758/Activities/IntroActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies/app/src/main/java/ntu/duongthianhhong/blueymovies_64130758/Activities/IntroActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/layout/fragment_cart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies/app/src/main/res/layout/fragment_cart.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies/app/src/main/res/values/themes.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
