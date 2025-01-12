@@ -1,9 +1,25 @@
 package ntu.duongthianhhong.blueymovies_64130758.Activities;
 
 import android.annotation.SuppressLint;
+import android.content.ActivityNotFoundException;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
+import android.speech.RecognizerIntent;
+import android.view.LayoutInflater;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -11,26 +27,19 @@ import androidx.viewpager2.widget.CompositePageTransformer;
 import androidx.viewpager2.widget.MarginPageTransformer;
 import androidx.viewpager2.widget.ViewPager2;
 
-import android.os.Handler;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
-
 import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.DocumentSnapshot;
-import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
 
@@ -42,9 +51,10 @@ import ntu.duongthianhhong.blueymovies_64130758.R;
 import ntu.duongthianhhong.blueymovies_64130758.databinding.FragmentExplorerBinding;
 
 public class ExplorerFragment extends Fragment {
-    ImageView imgAvatar;
-    TextView txtUsername, txtEmail;
-    FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+    private static final int RecordAudioRequestCode = 111;
+    private ImageView imgAvatar;
+    private TextView txtUsername, txtEmail;
+    private FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
     private FragmentExplorerBinding binding;
     private FirebaseDatabase database;
     private Handler sliderHandler = new Handler();
@@ -63,35 +73,8 @@ public class ExplorerFragment extends Fragment {
         initBanner();
         initTopMoving();
         initUpcoming();
-        FirebaseFirestore db = FirebaseFirestore.getInstance();
-        DocumentReference docRef = db.collection("users").document(firebaseUser.getUid());
-        docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-            @SuppressLint({"SetTextI18n", "UseCompatLoadingForDrawables"})
-            @Override
-            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                if (task.isSuccessful()) {
-                    DocumentSnapshot document = task.getResult();
-                    if (document.exists()) {
-                        String username = "Hello " + document.getString("first_name") +
-                                " " + document.getString("last_name");
-                        String email = document.getString("email");
-                        String linkImg = document.getString("imgAvatar");
-                        assert linkImg != null;
-                        if(linkImg.isEmpty()) {
-                            imgAvatar.setImageDrawable(getResources().getDrawable(R.drawable.baseline_account_circle_24));
-                        }
-                        else {
-                            Glide.with(requireContext())
-                                    .load(linkImg)
-                                    .circleCrop()
-                                    .into(imgAvatar);
-                        }
-                        txtUsername.setText(username);
-                        txtEmail.setText(email);
-                    }
-                }
-            }
-        });
+        initUserInfo();
+        initSearchFeature();
         return binding.getRoot();
     }
 
@@ -99,6 +82,116 @@ public class ExplorerFragment extends Fragment {
         imgAvatar = binding.imgAvatar;
         txtUsername = binding.txtUsername;
         txtEmail = binding.txtEmail;
+    }
+
+    private void initSearchFeature() {
+        EditText editText = binding.editTextText2;
+        editText.setOnTouchListener((v, event) -> {
+            if (event.getAction() == MotionEvent.ACTION_UP) {
+                int drawableStart = 0;
+                int drawableEnd = 2;
+
+                // Handle drawableStart (Search)
+                if (editText.getCompoundDrawables()[drawableStart] != null) {
+                    if (event.getRawX() <= (editText.getLeft() + editText.getCompoundDrawables()[drawableStart].getBounds().width())) {
+                        String query = editText.getText().toString();
+                        if (!query.isEmpty()) {
+                            Toast.makeText(getContext(), "Searching for: " + query, Toast.LENGTH_SHORT).show();
+                            // Add search logic here
+                        }
+                        return true;
+                    }
+                }
+
+                // Handle drawableEnd (Microphone)
+                if (editText.getCompoundDrawables()[drawableEnd] != null) {
+                    if (event.getRawX() >= (editText.getRight() - editText.getCompoundDrawables()[drawableEnd].getBounds().width())) {
+                        startVoiceSearch();
+                        return true;
+                    }
+                }
+            }
+            return false;
+        });
+    }
+
+    private void startVoiceSearch() {
+        checkPermission();
+        Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+        intent.putExtra(RecognizerIntent.EXTRA_PROMPT, "Hãy nói từ khóa tìm kiếm");
+
+        try {
+            startActivityForResult(intent, RecordAudioRequestCode); // Request speech recognition
+        } catch (ActivityNotFoundException e) {
+            Toast.makeText(getContext(), "Không hỗ trợ nhận diện giọng nói trên thiết bị này", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == RecordAudioRequestCode && resultCode == getActivity().RESULT_OK) {
+            if (data != null) {
+                String query = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS).get(0);
+                binding.editTextText2.setText(query); // Update EditText with the voice input
+                if (!query.isEmpty()) {
+                    // Add logic for searching here
+                    Toast.makeText(getContext(), "Searching for: " + query, Toast.LENGTH_SHORT).show();
+                }
+            }
+        }
+    }
+
+    private void checkPermission() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (ActivityCompat.checkSelfPermission(getContext(), android.Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(getActivity(), new String[]{android.Manifest.permission.RECORD_AUDIO}, RecordAudioRequestCode);
+            }
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == RecordAudioRequestCode && grantResults.length > 0) {
+            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                Toast.makeText(getContext(), "Permission granted", Toast.LENGTH_LONG).show();
+            } else {
+                Toast.makeText(getContext(), "Permission denied", Toast.LENGTH_LONG).show();
+            }
+        }
+    }
+
+    private void initUserInfo() {
+        if (firebaseUser != null) {
+            FirebaseFirestore db = FirebaseFirestore.getInstance();
+            DocumentReference docRef = db.collection("users").document(firebaseUser.getUid());
+            docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                @SuppressLint({"SetTextI18n", "UseCompatLoadingForDrawables"})
+                @Override
+                public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                    if (task.isSuccessful()) {
+                        DocumentSnapshot document = task.getResult();
+                        if (document.exists()) {
+                            String username = "Hello " + document.getString("first_name") + " " + document.getString("last_name");
+                            String email = document.getString("email");
+                            String linkImg = document.getString("imgAvatar");
+
+                            if (linkImg != null && !linkImg.isEmpty()) {
+                                Glide.with(getContext()).load(linkImg).circleCrop().into(imgAvatar);
+                            } else {
+                                imgAvatar.setImageDrawable(getResources().getDrawable(R.drawable.baseline_account_circle_24));
+                            }
+
+                            txtUsername.setText(username);
+                            txtEmail.setText(email);
+                        }
+                    }
+                }
+            });
+        }
     }
 
     private void initUpcoming() {
@@ -113,8 +206,7 @@ public class ExplorerFragment extends Fragment {
                         items.add(issue.getValue(Film.class));
                     }
                     if (!items.isEmpty()) {
-                        binding.recyclerViewUpcoming.setLayoutManager(new LinearLayoutManager(getContext(),
-                                LinearLayoutManager.HORIZONTAL, false));
+                        binding.recyclerViewUpcoming.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
                         binding.recyclerViewUpcoming.setAdapter(new FilmListAdapter(items));
                     }
                     binding.progressUpcoming.setVisibility(View.GONE);
@@ -140,8 +232,7 @@ public class ExplorerFragment extends Fragment {
                         items.add(issue.getValue(Film.class));
                     }
                     if (!items.isEmpty()) {
-                        binding.recyclerViewTopMovies.setLayoutManager(new LinearLayoutManager(getContext(),
-                                LinearLayoutManager.HORIZONTAL, false));
+                        binding.recyclerViewTopMovies.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
                         binding.recyclerViewTopMovies.setAdapter(new FilmListAdapter(items));
                     }
                     binding.progressBarTop.setVisibility(View.GONE);

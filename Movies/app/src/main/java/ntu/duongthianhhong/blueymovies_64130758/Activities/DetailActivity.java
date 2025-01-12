@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.view.ViewOutlineProvider;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -36,14 +37,36 @@ public class DetailActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ImageView imageView5 = findViewById(R.id.imageView5);
+
         binding = ActivityDetailBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         setVariable();
+
+        binding.imageView5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Tạo Intent chia sẻ
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.setType("text/plain");
+
+                // Nội dung chia sẻ
+                String title = "Xem phim tuyệt vời này!";
+                String link = "https://play.google.com/store/apps/details?id=vn.duongthianhhong.sharelink";
+
+                intent.putExtra(Intent.EXTRA_SUBJECT, title);
+                intent.putExtra(Intent.EXTRA_TEXT, link);
+
+                // Bắt đầu Intent chia sẻ
+                startActivity(Intent.createChooser(intent, "Chia sẻ qua"));
+            }
+        });
 
         Window w = getWindow();
         w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
     }
+
 
     private void setVariable() {
         Film item = (Film) getIntent().getSerializableExtra("object");
