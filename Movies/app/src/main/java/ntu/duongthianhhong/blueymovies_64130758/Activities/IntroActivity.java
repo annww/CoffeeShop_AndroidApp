@@ -20,7 +20,7 @@ public class IntroActivity extends AppCompatActivity {
         binding.startBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(IntroActivity.this, MainActivity.class));
+                startActivity(new Intent(IntroActivity.this, SignInActivity.class));
             }
         });
         Window w = getWindow();

@@ -34,7 +34,10 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
 
+import ntu.duongthianhhong.blueymovies_64130758.Adapters.FilmListAdapter;
+import ntu.duongthianhhong.blueymovies_64130758.Adapters.SlidersAdapter;
 import ntu.duongthianhhong.blueymovies_64130758.Domains.Film;
+import ntu.duongthianhhong.blueymovies_64130758.Domains.SliderItems;
 import ntu.duongthianhhong.blueymovies_64130758.R;
 import ntu.duongthianhhong.blueymovies_64130758.databinding.FragmentExplorerBinding;
 
