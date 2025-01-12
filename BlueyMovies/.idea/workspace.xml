@@ -97,8 +97,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd76e8a8-b45b-4a56-b3f1-b23ec5f2574a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies/app/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Movies/app/src/main/java/ntu/duongthianhhong/blueymovies_64130758/Activities/CartFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Movies/app/src/main/java/ntu/duongthianhhong/blueymovies_64130758/Activities/ExplorerFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Movies/app/src/main/java/ntu/duongthianhhong/blueymovies_64130758/Activities/FavoriteFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Movies/app/src/main/java/ntu/duongthianhhong/blueymovies_64130758/Activities/ProfileFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Movies/app/src/main/res/layout/fragment_cart.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Movies/app/src/main/res/layout/fragment_explorer2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Movies/app/src/main/res/layout/fragment_favorite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Movies/app/src/main/res/layout/fragment_profile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/java/ntu/duongthianhhong/blueymovies_64130758/Activities/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies/app/src/main/java/ntu/duongthianhhong/blueymovies_64130758/Activities/MainActivity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
