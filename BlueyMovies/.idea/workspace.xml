@@ -97,83 +97,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd76e8a8-b45b-4a56-b3f1-b23ec5f2574a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Movies/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies/app/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/java/ntu/duongthianhhong/blueymovies_64130758/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-hdpi/back.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-hdpi/bookmark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-hdpi/btn_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-hdpi/btn_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-hdpi/btn_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-hdpi/btn_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-hdpi/img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-hdpi/intro_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-hdpi/microphone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-hdpi/play_circle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-hdpi/profile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-hdpi/search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-hdpi/share.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-ldpi/back.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-ldpi/bookmark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-ldpi/btn_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-ldpi/btn_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-ldpi/btn_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-ldpi/btn_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-ldpi/intro_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-ldpi/microphone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-ldpi/play_circle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-ldpi/profile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-ldpi/search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-ldpi/share.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-mdpi/back.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-mdpi/bookmark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-mdpi/btn_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-mdpi/btn_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-mdpi/btn_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-mdpi/btn_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-mdpi/intro_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-mdpi/microphone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-mdpi/play_circle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-mdpi/profile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-mdpi/search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-mdpi/share.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xhdpi/back.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xhdpi/bookmark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xhdpi/btn_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xhdpi/btn_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xhdpi/btn_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xhdpi/btn_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xhdpi/intro_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xhdpi/microphone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xhdpi/play_circle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xhdpi/profile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xhdpi/search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xhdpi/share.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxhdpi/back.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxhdpi/bookmark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxhdpi/btn_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxhdpi/btn_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxhdpi/btn_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxhdpi/btn_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxhdpi/intro_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxhdpi/microphone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxhdpi/play_circle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxhdpi/profile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxhdpi/search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxhdpi/share.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxxhdpi/back.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxxhdpi/bookmark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxxhdpi/btn_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxxhdpi/btn_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxxhdpi/btn_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxxhdpi/btn_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxxhdpi/intro_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxxhdpi/microphone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxxhdpi/play_circle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxxhdpi/profile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxxhdpi/search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/drawable/drawable-xxxhdpi/share.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
