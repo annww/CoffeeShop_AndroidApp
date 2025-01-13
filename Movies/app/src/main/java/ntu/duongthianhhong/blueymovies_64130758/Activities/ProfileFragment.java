@@ -74,7 +74,7 @@ public class ProfileFragment extends Fragment {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
-                if(btnEdit.getText().toString().equals("Edit")) {
+                if(btnEdit.getText().toString().equals("Chỉnh sửa")) {
                     edtFirstname.setFocusable(true);
                     edtFirstname.setFocusableInTouchMode(true);
                     edtLastname.setFocusable(true);
@@ -117,7 +117,7 @@ public class ProfileFragment extends Fragment {
                 }
                 else {
                     GetInfo();
-                    btnEdit.setText("Edit");
+                    btnEdit.setText("Chỉnh sửa");
                 }
             }
         });
@@ -391,7 +391,7 @@ public class ProfileFragment extends Fragment {
     }
 
     private void Mapping() {
-        imgAvatar = rootView.findViewById(R.id.imgAvatar);
+        imgAvatar = rootView.findViewById(R.id.imgAva);
         logout = rootView.findViewById(R.id.logout);
         edtFirstname = rootView.findViewById(R.id.edtFirstname);
         edtLastname = rootView.findViewById(R.id.edtLastname);

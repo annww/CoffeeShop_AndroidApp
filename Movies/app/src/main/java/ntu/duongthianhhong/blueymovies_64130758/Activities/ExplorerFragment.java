@@ -53,7 +53,7 @@ import ntu.duongthianhhong.blueymovies_64130758.databinding.FragmentExplorerBind
 
 public class ExplorerFragment extends Fragment {
     private static final int RecordAudioRequestCode = 111;
-    private ImageView imgAvatar;
+    private ImageView imgAva;
     private TextView txtUsername, txtEmail;
     private FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
     private FragmentExplorerBinding binding;
@@ -80,7 +80,7 @@ public class ExplorerFragment extends Fragment {
     }
 
     private void Mapping() {
-        imgAvatar = binding.imgAvatar;
+        imgAva = binding.imgAva;
         txtUsername = binding.txtUsername;
         txtEmail = binding.txtEmail;
     }
@@ -181,15 +181,15 @@ public class ExplorerFragment extends Fragment {
                             String linkImg = document.getString("imgAvatar");
 
                             if (linkImg != null && !linkImg.isEmpty()) {
-                                Glide.with(getContext()).load(linkImg).circleCrop().into(imgAvatar);
+                                Glide.with(getContext()).load(linkImg).circleCrop().into(imgAva);
                             } else {
-                                imgAvatar.setImageDrawable(getResources().getDrawable(R.drawable.baseline_account_circle_24));
+                                imgAva.setImageDrawable(getResources().getDrawable(R.drawable.baseline_account_circle_24));
                             }
 
                             txtUsername.setText(username);
                             txtEmail.setText(email);
 
-                            imgAvatar.setOnClickListener(v -> {
+                            imgAva.setOnClickListener(v -> {
                                 // Khi ấn vào avatar, chuyển tới ProfileFragment
                                 FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
                                 transaction.replace(R.id.frame_layout, new ProfileFragment());
